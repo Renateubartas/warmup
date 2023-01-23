@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /*variables - custom properties*/
+    --font-size-middle: 4rem;
+    --font-size-big: 8rem;
+    --font-color-header: #FFFFFF;
+    --red: rgba(255, 0, 0, .4);
+    --blue: rgba(0, 0, 255, .4);
+    --green: rgba(0, 255, 0, .4);
+    --yellow: rgba(255, 255, 0, .4);
+    font-size: 1rem;
+}
+
+body, html {
+    height: 100%;
+}
+
+h1, p {
+    font-family: Helvetica, sans-serif;
+}
+a>i{
+    color: white;
+}
+
+.bg {
+    background-image: url("/images/img.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    color: var(--font-color-header);
+}
+
+.bg-color {
+    background-color: var(--blue);
+    width: 100%; height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.text-area {
+    height: fit-content;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 18rem;
+}
+
+.text-area>:first-child {
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+.sub-line {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.sub-line>:last-child {
+    margin: 0 1rem 0 1rem;
+    font-size: 60px;
+    display: grid;
+    place-content: center;
+}
+
+.social-media-area {
+    height: fit-content;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.social-media-area a {
+    display: grid;
+    place-content: center;
+    font-size: 100px;
+    flex: 0 0 200px;
+}
+
+.font-size-big {
+    font-size: var(--font-size-big);
+}
+
+.font-size-middle {
+    font-size: var(--font-size-middle);
+}
+
+/*media-query*/
+/*small viewport*/
+@media screen and (max-device-width: 40em){
+    .social-media-area {
+        width: 100%;
+    }
+    .social-media-area a{
+        flex: 0 1 200px;
+        font-size: 180px;
+    }
+}
