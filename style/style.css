@@ -16,10 +16,13 @@
     --font-size-middle: 4rem;
     --font-size-big: 8rem;
     --font-color-header: #FFFFFF;
+    --bg-color: rgba(0, 0, 0, 0);
+
     --red: rgba(255, 0, 0, .4);
     --blue: rgba(0, 0, 255, .4);
-    --green: rgba(0, 255, 0, .4);
+    --turquoise: rgba(0, 255, 0, .4);
     --yellow: rgba(255, 255, 0, .4);
+
     font-size: 1rem;
 }
 
@@ -29,9 +32,6 @@ body, html {
 
 h1, p {
     font-family: Helvetica, sans-serif;
-}
-a>i{
-    color: white;
 }
 
 .bg {
@@ -46,7 +46,7 @@ a>i{
 }
 
 .bg-color {
-    background-color: var(--blue);
+    background-color: var(--bg-color);
     width: 100%; height: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -94,10 +94,23 @@ a>i{
 }
 
 .social-media-area a {
+    flex: 0 1 220px;
     display: grid;
     place-content: center;
-    font-size: 100px;
-    flex: 0 0 200px;
+    font-size: 180px;
+}
+
+.social-media-area a {
+    margin: 1rem;
+}
+
+a>i{
+    color: white;
+}
+
+.social-media-area a:hover {
+    font-size: 110px;
+/*    transition: 1s;*/
 }
 
 .font-size-big {
@@ -129,13 +142,29 @@ footer p, footer a{
 }
 
 /*media-query*/
-/*small viewport*/
-@media screen and (max-device-width: 40em){
+@media screen and (min-device-width: 480px){
+    /*start tablet size*/
+    .text-area {
+        margin-top: 0rem;
+    }
     .social-media-area {
         width: 100%;
+        border: solid 5px deeppink;
     }
     .social-media-area a{
-        flex: 0 1 200px;
-        font-size: 180px;
+        flex: 0 1 70px;
+        font-size: 70px;
+    }
+    .social-media-area a:hover {
+        font-size: 110px;
+        /*    transition: 1s;*/
+    }
+}
+
+@media screen and (min-device-width: 991px){
+    /*start monitor size*/
+    .social-media-area {
+        width: 100%;
+        border: solid 5px deepskyblue;
     }
 }
