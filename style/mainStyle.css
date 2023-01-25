@@ -1,0 +1,61 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /*variables - custom properties*/
+    --font-size-small: 2rem;
+    --font-size-middle: 4rem;
+    --font-size-big: 8rem;
+    --font-color-header: #FFFFFF;
+    --bg-color: rgba(0, 0, 0, 0);
+    --transitionHoverTime: 1s;
+}
+
+body, html {
+    height: 100%;
+}
+
+h1, p {
+    font-family: Helvetica, sans-serif;
+}
+
+.bg {
+    background-image: url("/images/img.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    color: var(--font-color-header);
+}
+
+.bg-color {
+    background-color: var(--bg-color);
+    width: 100%; height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.wrapper {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.font-size-big {
+    font-size: var(--font-size-big);
+}
+.font-size-middle {
+    font-size: var(--font-size-middle);
+}
+.font-size-small {
+    font-size: var(--font-size-small);
+}

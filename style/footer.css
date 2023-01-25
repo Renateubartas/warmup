@@ -1,0 +1,20 @@
+footer {
+    flex: 0 1 5vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+footer a, footer>div>p {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: var(--font-color-header);
+    text-decoration: none;
+    margin: 0 1rem 0 1rem;
+}
+.footer-wrapper {
+    flex: 1 1 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}

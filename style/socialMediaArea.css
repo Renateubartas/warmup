@@ -1,0 +1,28 @@
+.social-media-wrapper {
+    flex: 1 1 30vh;
+}
+
+.social-media-area {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.social-media-area a {
+    flex: 0 1 220px;
+    font-size: 180px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: grid;
+    place-items: center;
+}
+
+a>i{
+    color: var(--font-color-header);
+}
+
+.social-media-area a:hover {
+    font-size: 200px;
+    transition: var(--transitionHoverTime);
+}

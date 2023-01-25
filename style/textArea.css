@@ -1,0 +1,31 @@
+.text-area-wrapper {
+    flex: 1 1 60vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+
+.text-area {
+    height: fit-content;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.text-area>:first-child {
+    flex: 1 1 80vw;
+    text-align: center;
+}
+
+.sub-line {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.sub-line>:last-child {
+    padding: 0 0 0 1rem;
+    font-size: 60px;
+    display: grid;
+    place-content: center;
+}
